@@ -1,0 +1,16 @@
+--extra-index-url https://download.blender.org/pypi/
+
+numpy
+scipy
+trimesh
+PyMCubes
+tqdm
+einops
+pandas
+wandb
+tyro
+pillow
+matplotlib
+blender-plots
+bpy==4.4.0
+ipynbname

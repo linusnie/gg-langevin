@@ -1,0 +1,37 @@
+# tyro YAML.
+!dataclass:TrainingConfig
+batch_size: 1024
+initialization: encoder
+method: !dataclass:DAPS
+  annealing_sigma_max: 1
+  annealing_sigma_min: 0.02
+  annealing_steps: 8
+  beta1: 0.9
+  beta2: 0.999
+  daps_lr: 0.0001
+  initialization: from_latents
+  langevin_steps: 250
+  learning_rate: 0.03
+  loss: !dataclass:GeometricLoss
+    eikonal_sigma: 0.01
+    eikonal_weight: 0.1
+    kl_weight: 0.0
+    num_siren_points: 5000
+    num_surface_points: 1024
+    num_uniform_points: 500
+    sdf_weight: 1.0
+    siren_alpha: 50
+    siren_weight: 0.0
+  ode_steps: 50
+  optimizer: adam
+  rho: 7.0
+n_steps: 2000
+random_seed: 42
+output_dir: !!python/object/apply:pathlib.PosixPath
+- .
+pointcloud_path: !!python/object/apply:pathlib.PosixPath
+- .
+model_path: !!python/object/apply:pathlib.PosixPath
+- .
+autoencoder_path: !!python/object/apply:pathlib.PosixPath
+- .
