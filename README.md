@@ -4,7 +4,7 @@
 >
 > Technical University of Munich, Munich Center for Machine Learning
 >
-> 📄 [Paper](https://arxiv.org/abs/XXXX.XXXXX)
+> 📄 [Paper](https://arxiv.org/abs/2603.27016)
 
 <p align="center"><img src="images/overview.svg" alt="teaser" style="clip-path: inset(0 0 3% 2%); max-width: 100%;"></p>
 
