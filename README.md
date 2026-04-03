@@ -1,4 +1,4 @@
-# GG-Langevin: Generative Shape Reconstruction with Geometry-Guided Langevin Dynamics
+# Generative Shape Reconstruction with Geometry-Guided Langevin Dynamics
 
 > [Linus Härenstam-Nielsen](https://linusnie.github.io/), [Dmitrii Pozdeev](https://diddone.github.io/), [Thomas Dagès](https://tommoo.github.io/), [Nikita Araslanov](https://arnike.github.io/) and [Daniel Cremers](https://vision.in.tum.de/members/cremers)
 >
