@@ -9,6 +9,7 @@
 <p align="center"><img src="images/overview.svg" alt="teaser" style="clip-path: inset(0 0 3% 2%); max-width: 100%;"></p>
 
 This repository contains the official implementation of GG-Langevin from the paper **Generative Shape Reconstruction with Geometry-Guided Langevin Dynamics**.
+A probabilistic approach to Generative 3D Reconstruction, leveraging a pre-trained shape diffusion model as prior.
 
 **Abstract:**
 Reconstructing complete 3D shapes from incomplete or noisy observations is a fundamentally ill-posed problem that requires balancing measurement consistency with shape plausibility. Existing methods for shape reconstruction can achieve strong geometric fidelity in ideal conditions but fail under realistic conditions with incomplete measurements or noise. At the same time, recent generative models for 3D shapes can synthesize highly realistic and detailed shapes but fail to be consistent with observed measurements. In this work, we introduce GG-Langevin: Geometry-Guided Langevin dynamics (GGL for short), a novel probabilistic approach that unifies these complementary perspectives. By traversing the trajectories of Langevin dynamics induced by a diffusion model, while preserving measurement consistency at every step, we generatively reconstruct shapes that fit both the measurements and the data-informed prior. We demonstrate through extensive experiments that GG-Langevin achieves higher geometric accuracy and greater robustness to missing data than existing methods for surface reconstruction. Our project code, trained models, and benchmark are available in this repository.
@@ -47,6 +48,7 @@ rm ggl/dataset.zip
 ```
 
 ## Running GG-Langevin
+GG-Langevin takes a pointcloud .npy file (or a datalist specifying multiple point clouds) as input, and outputs the estimated shape.
 To run GG-Langevin on the sparse Chairs category, use the following command:
 
 ```bash
