@@ -23,6 +23,7 @@ conda activate ggl
 # Install PyTorch with CUDA (match your CUDA version, verified with 12.6)
 pip install torch==2.7.0 torchvision --index-url https://download.pytorch.org/whl/cu126
 
+pip install bpy==4.4.0 --extra-index-url https://download.blender.org/pypi/
 pip install -r requirements.txt
 
 # Install torch_cluster
@@ -35,6 +36,7 @@ Flash Attention is not installed by default. The code falls back to standard att
 
 ```bash
 conda install cuda-nvcc=12.6 -c nvidia -y
+pip install psutil packaging ninja
 pip install flash-attn --no-build-isolation
 ```
 
